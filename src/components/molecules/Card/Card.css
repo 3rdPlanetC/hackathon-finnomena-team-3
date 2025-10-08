@@ -1,0 +1,75 @@
+.card {
+	background-color: white;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: all 0.2s ease-in-out;
+}
+
+.card--clickable {
+	cursor: pointer;
+}
+
+.card--clickable:hover {
+	transform: translateY(-2px);
+}
+
+/* Variants */
+.card--default {
+	border: 1px solid #e5e7eb;
+}
+
+.card--elevated {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	border: none;
+}
+
+.card--outlined {
+	border: 2px solid #d1d5db;
+	background-color: transparent;
+}
+
+/* Sizes */
+.card--small {
+	padding: 1rem;
+}
+
+.card--medium {
+	padding: 1.5rem;
+}
+
+.card--large {
+	padding: 2rem;
+}
+
+.card__header {
+	margin-bottom: 1rem;
+}
+
+.card__title {
+	margin-bottom: 0.25rem;
+}
+
+.card__subtitle {
+	margin: 0;
+}
+
+.card__content {
+	/* Content styles */
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+	.card {
+		background-color: #374151;
+	}
+
+	.card--default {
+		border-color: #4b5563;
+	}
+
+	.card--outlined {
+		border-color: #6b7280;
+		background-color: transparent;
+	}
+}

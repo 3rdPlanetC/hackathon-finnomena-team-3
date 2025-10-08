@@ -1,0 +1,129 @@
+.component-showcase {
+	flex: 1;
+	background-color: #f8fafc;
+	padding: 2rem 0;
+}
+
+.component-showcase__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.component-showcase__title {
+	margin-bottom: 1rem;
+}
+
+.component-showcase__subtitle {
+	margin-bottom: 3rem;
+}
+
+.component-showcase__section {
+	margin-bottom: 4rem;
+}
+
+.component-showcase__section-title {
+	margin-bottom: 2rem;
+	color: #1f2937;
+}
+
+.component-showcase__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 2rem;
+}
+
+.component-showcase__button-group {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.component-showcase__button-row {
+	display: flex;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+}
+
+.component-showcase__input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.component-showcase__text-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.component-showcase__form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.component-showcase__card-group {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.component-showcase__demo-form {
+	max-width: 600px;
+}
+
+.component-showcase__demo-title {
+	margin-bottom: 2rem;
+	color: #1f2937;
+}
+
+.component-showcase__form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.component-showcase__form-actions {
+	display: flex;
+	gap: 1rem;
+	margin-top: 2rem;
+	flex-wrap: wrap;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+	.component-showcase__container {
+		padding: 0 0.5rem;
+	}
+
+	.component-showcase__grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.component-showcase__button-row {
+		justify-content: center;
+	}
+
+	.component-showcase__form-row {
+		grid-template-columns: 1fr;
+	}
+
+	.component-showcase__form-actions {
+		flex-direction: column;
+	}
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+	.component-showcase {
+		background-color: #1f2937;
+	}
+
+	.component-showcase__section-title,
+	.component-showcase__demo-title {
+		color: #f9fafb;
+	}
+}

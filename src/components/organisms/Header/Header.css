@@ -1,0 +1,161 @@
+.header {
+	background-color: white;
+	border-bottom: 1px solid #e5e7eb;
+	padding: 0 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 50;
+}
+
+.header__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 4rem;
+	gap: 1rem;
+}
+
+.header__brand {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	flex-shrink: 0;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+}
+
+.header__title {
+	margin: 0;
+	color: #1f2937;
+}
+
+.header__nav {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.header__nav-list {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 2rem;
+}
+
+.header__nav-item {
+	/* Navigation item styles */
+}
+
+.header__nav-link {
+	text-decoration: none;
+	color: #6b7280;
+	font-weight: 500;
+	transition: color 0.2s ease-in-out;
+}
+
+.header__nav-link:hover {
+	color: #1f2937;
+}
+
+.header__actions {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-shrink: 0;
+}
+
+.header__search {
+	width: 300px;
+}
+
+.header__search-box {
+	width: 100%;
+}
+
+.header__user-menu {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.header__user-name {
+	color: #6b7280;
+	margin: 0;
+}
+
+.header__user-actions {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.header__user-action {
+	/* User action button styles */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+	.header__container {
+		flex-wrap: wrap;
+		height: auto;
+		padding: 1rem 0;
+	}
+
+	.header__nav {
+		order: 3;
+		width: 100%;
+		margin-top: 1rem;
+	}
+
+	.header__nav-list {
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.header__search {
+		width: 200px;
+	}
+
+	.header__actions {
+		gap: 0.5rem;
+	}
+}
+
+@media (max-width: 640px) {
+	.header__search {
+		width: 150px;
+	}
+
+	.header__user-name {
+		display: none;
+	}
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+	.header {
+		background-color: #1f2937;
+		border-bottom-color: #374151;
+	}
+
+	.header__title {
+		color: #f9fafb;
+	}
+
+	.header__nav-link {
+		color: #d1d5db;
+	}
+
+	.header__nav-link:hover {
+		color: #f9fafb;
+	}
+
+	.header__user-name {
+		color: #d1d5db;
+	}
+}

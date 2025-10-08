@@ -1,0 +1,25 @@
+.search-box {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	width: 100%;
+}
+
+.search-box__input {
+	flex: 1;
+}
+
+.search-box__button {
+	flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+	.search-box {
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.search-box__button {
+		width: 100%;
+	}
+}

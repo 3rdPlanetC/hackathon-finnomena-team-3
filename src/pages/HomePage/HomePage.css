@@ -1,0 +1,133 @@
+.home-page {
+	flex: 1;
+	background-color: #f8fafc;
+}
+
+.home-page__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+}
+
+.home-page__hero {
+	text-align: center;
+	padding: 4rem 0;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	border-radius: 12px;
+	margin-bottom: 4rem;
+}
+
+.home-page__title {
+	margin-bottom: 1rem;
+	color: white;
+}
+
+.home-page__subtitle {
+	margin-bottom: 2rem;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.home-page__actions {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.home-page__features {
+	margin-bottom: 4rem;
+}
+
+.home-page__section-title {
+	margin-bottom: 3rem;
+}
+
+.home-page__cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+}
+
+.home-page__card {
+	height: 100%;
+}
+
+.home-page__demo {
+	background-color: white;
+	padding: 3rem;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.home-page__demo-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 3rem;
+}
+
+.home-page__demo-section {
+	/* Demo section styles */
+}
+
+.home-page__demo-title {
+	margin-bottom: 1.5rem;
+}
+
+.home-page__search {
+	max-width: 400px;
+}
+
+.home-page__form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	max-width: 400px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+	.home-page__container {
+		padding: 1rem;
+	}
+
+	.home-page__hero {
+		padding: 2rem 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.home-page__actions {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.home-page__cards {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.home-page__demo {
+		padding: 2rem 1rem;
+	}
+
+	.home-page__demo-content {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.home-page__search,
+	.home-page__form {
+		max-width: 100%;
+	}
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+	.home-page {
+		background-color: #1f2937;
+	}
+
+	.home-page__demo {
+		background-color: #374151;
+	}
+}

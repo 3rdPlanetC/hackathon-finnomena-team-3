@@ -1,0 +1,35 @@
+.form-field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.form-field__label {
+	display: block;
+	margin-bottom: 0.25rem;
+}
+
+.form-field__required {
+	color: #ef4444;
+}
+
+.form-field__input {
+	width: 100%;
+}
+
+.form-field__error {
+	margin: 0;
+}
+
+.form-field__help {
+	margin: 0;
+}
+
+.form-field--error .form-field__input {
+	border-color: #ef4444;
+}
+
+.form-field--error .form-field__input:focus {
+	border-color: #ef4444;
+	box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
